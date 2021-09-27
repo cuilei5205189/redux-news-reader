@@ -1,4 +1,4 @@
-// import './App.css';
+import './App.css';
 import React from "react";
 import ArticlePreviews from "./features/articlePreviews/ArticlePreviews";
 import CurrentArticle from "./features/currentArticle/CurrentArticle";

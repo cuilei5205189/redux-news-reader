@@ -6,5 +6,9 @@ export default function CommentList({ comments }) {
     return null;
   }
 
-  return <ul className="comments-list"></ul>;
+  return (
+    <ul className="comments-list"> {
+      comments.map(comment => < Comment comment={comment} />)
+    }
+    </ul>)
 }
