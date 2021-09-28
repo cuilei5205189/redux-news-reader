@@ -18,7 +18,6 @@ const Comments = () => {
 
   // Dispatch loadCommentsForArticleId with useEffect here.
   useEffect( () => {
-    console.log(comments)
     if(article){
       dispatch(loadCommentsForArticleId(article.id))
     }
