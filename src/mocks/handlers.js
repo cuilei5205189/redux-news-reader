@@ -55,9 +55,9 @@ export const handlers = [
     mockDelay(500);
     const { articleId } = req.params;
     const commentResponse = {
-      id: commentsData.length,
+      id: Math.round(Math.random()*1000), 
       articleId: parseInt(articleId),
-      text: JSON.parse(req.body).comment
+      text: req.body.comment
     };
 
     if (userComments[articleId]) {
